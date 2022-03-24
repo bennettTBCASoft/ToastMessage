@@ -19,6 +19,7 @@ toast.view 已經被棄用
 
 ## ListAlertDialog
 用 setItems(ArrayData) 取代 setMessage 
+
 ![](https://i.imgur.com/j0y9kbS.png)
 
 
