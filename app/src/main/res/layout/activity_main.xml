@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal Toast"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/btn_customized"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customized Toast"
+        app:layout_constraintTop_toBottomOf="@+id/btn_normal"
+        app:layout_constraintStart_toStartOf="@id/btn_normal"
+        app:layout_constraintEnd_toEndOf="@id/btn_normal"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/btn_snackbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snackbar"
+        app:layout_constraintTop_toBottomOf="@id/btn_customized"
+        app:layout_constraintStart_toStartOf="@id/btn_customized"
+        app:layout_constraintEnd_toEndOf="@id/btn_customized"
+        android:layout_marginTop="40dp"
+        />
+
+
+    <Button
+        android:id="@+id/btn_alertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="list_alertDialog"
+        app:layout_constraintTop_toBottomOf="@id/btn_snackbar"
+        app:layout_constraintStart_toStartOf="@id/btn_snackbar"
+        app:layout_constraintEnd_toEndOf="@id/btn_snackbar"
+        android:layout_marginTop="40dp"
+
+        />
+
+    <Button
+        android:id="@+id/list_alertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="list_alertDialog"
+        app:layout_constraintTop_toBottomOf="@id/btn_alertDialog"
+        app:layout_constraintStart_toStartOf="@id/btn_alertDialog"
+        app:layout_constraintEnd_toEndOf="@id/btn_alertDialog"
+        android:layout_marginTop="40dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/radioButton_alertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="radioButton_alertDialog"
+        app:layout_constraintTop_toBottomOf="@id/list_alertDialog"
+        app:layout_constraintStart_toStartOf="@id/list_alertDialog"
+        app:layout_constraintEnd_toEndOf="@id/list_alertDialog"
+        android:layout_marginTop="40dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
